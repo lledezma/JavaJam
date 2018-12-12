@@ -3,7 +3,7 @@
 <head>
     <title>JavaJam Coffee House Menu</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="javaJam.css">
+    <link rel="stylesheet" href="JavaJam.css">
 </head>
 <body>
 <div id="wrapper">
@@ -19,40 +19,32 @@
         <!--extra blank space = &nbsp  and nav = navigation links and b = bold text-->
     </nav>
 
-
     <main>
-        <!--div-->
-
-        <h2>JavaJam Jobs</h2>
-        <p>This is for Jobs</p>
-        <dt><strong>Java Jobs</strong></dt>
-
-
-        <dt><strong>Still in development</strong></dt>
-
-
-        <dt><strong>Jobs</strong></dt>
-
-
-   <script type="text/javascript">
-
-        </script>
-
-
-        <form>
-            <input type="button" value="Job Applications" onclick="alert('TBA');"/>
-        </form>
-
-        <form>
-            <input type="button" value="Job information" onclick="alert('Information');"/>
-        </form>
-
-
-
-    </main>
-
-
-
+       <div class ="container">
+            <h1>Submit info for Consideration, <small>will seponse shortly</small></h1>
+            <div class="jumbotron">
+                <h3>Submit info:</h3>
+                <form id="issueInputForm">
+                    <div class="form-group">
+                        <label for="FullName">Full Name</label>
+                        <input type="text" class="form-control" id="issueDescInput" placeholder="Submit Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="TypyofInfo">Info</label>
+                        <select id="issueSeverityInput" class="form-control">
+                            <option value="Low">Job</option>
+                            <option value="Medium">Menu</option>
+                            <option value="High">General Questions</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Date">Date</label>
+                        <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Today's Date">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+     </main>
     <footer>
         <a>Copyright &copy; 2016 JavaJam Coffee House</a>
         <br>
